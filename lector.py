@@ -43,9 +43,7 @@ while captura.isOpened():
 
             if excel.Visible:
                 if texto_decodificado in MATRICULAS_SERVICIO:
-                    print("Acción activada en Excel")
                     excel.Run("Botón1_Haga_clic_en")
-                    print("Macro ejecutada en Excel")
                 else:
                     # Insertar el texto en la celda actual
                     selected_cell = worksheet.Application.ActiveCell
